@@ -1,0 +1,32 @@
+nb:
+  refinery:
+    plugins:
+      pedals:
+        title: Pedals
+    pedals:
+      admin:
+        pedals:
+          actions:
+            create_new: Lag en ny Pedal
+            reorder: Endre rekkefølgen på Pedals
+            reorder_done: Ferdig å endre rekkefølgen Pedals
+          records:
+            title: Pedals
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Pedals enda. Klikk på "Lag en ny Pedal" for å legge til din første pedal.
+          pedal:
+            view_live_html: Vis hvordan denne pedal ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne pedal
+            delete: Fjern denne pedal permanent
+      pedals:
+        show:
+          other: Andre Pedals
+  activerecord:
+    attributes:
+      'refinery/pedals/pedal':
+        name: Name
+        riding_type: Riding Type
+        category: Category
+        weight: Weight
+        description: Description
+        pedal_image: Pedal Image

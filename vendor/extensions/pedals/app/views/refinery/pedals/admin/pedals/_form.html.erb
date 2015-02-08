@@ -1,0 +1,56 @@
+<%= form_for [refinery, :pedals_admin, @pedal] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @pedal,
+              :include_object_name => true %>
+
+  <%= render '/refinery/admin/locale_picker',
+              :current_locale => Globalize.locale %>
+  <div class='field'>
+    <%= f.label :name -%>
+    <%= f.text_field :name, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :riding_type -%>
+    <%= f.text_field :riding_type -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :category -%>
+    <%= f.text_field :category -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :weight -%>
+    <%= f.number_field :weight -%>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:description],
+                :object => "pedals/pedal" -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :pedal_image -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :pedal_image_id,
+               :image => @pedal.pedal_image,
+               :toggle_image_display => false -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.pedals.admin.pedals.pedal'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @pedal.name) -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>

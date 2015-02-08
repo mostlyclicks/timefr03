@@ -1,0 +1,34 @@
+zh-CN:
+  refinery:
+    plugins:
+      pedals:
+        title: Pedals
+    pedals:
+      admin:
+        pedals:
+          actions:
+            create_new: 建立新的 Pedal
+            reorder: 对 Pedals 重新排序
+            reorder_done: 对 Pedals 的重新排序结束
+          records:
+            title: Pedals
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Pedals yet. Click "Add New Pedal" to add your first pedal.
+            no_items_yet: 目前没有 Pedals . 点击 "Add New Pedal" 创建一个pedal.
+          pedal:
+            view_live_html: 查看 pedal 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 pedal
+            delete: 永久删除 pedal
+      pedals:
+        show:
+          other: 其他 Pedals
+  activerecord:
+    attributes:
+      'refinery/pedals/pedal':
+        name: Name
+        riding_type: Riding Type
+        category: Category
+        weight: Weight
+        description: Description
+        pedal_image: Pedal Image

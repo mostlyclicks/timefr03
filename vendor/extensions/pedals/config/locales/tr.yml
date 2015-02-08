@@ -1,0 +1,32 @@
+tr:
+  refinery:
+    plugins:
+      pedals:
+        title: Pedals
+    pedals:
+      admin:
+        pedals:
+          actions:
+            create_new: Yeni Ekle Pedal
+            reorder: Tekrar sirala Pedals
+            reorder_done: Tekrar siralama tamamlandiPedals
+          records:
+            title: Pedals
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Pedals yok henuz.  Tikla "Yeni Ekle Pedal" eklemek senin ilk pedal.
+          pedal:
+            view_live_html: Bunu canlu pedal goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle pedal
+            delete: Bunu Sil pedal sonsuza dek
+      pedals:
+        show:
+          other: Diger Pedals
+  activerecord:
+    attributes:
+      'refinery/pedals/pedal':
+        name: Name
+        riding_type: Riding Type
+        category: Category
+        weight: Weight
+        description: Description
+        pedal_image: Pedal Image

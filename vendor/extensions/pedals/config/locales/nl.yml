@@ -1,0 +1,32 @@
+nl:
+  refinery:
+    plugins:
+      pedals:
+        title: Pedals
+    pedals:
+      admin:
+        pedals:
+          actions:
+            create_new: Nieuwe Pedal toevoegen
+            reorder: De volgorde van de Pedals wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Pedal-volgorde
+          records:
+            title: Pedals
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Pedals. Druk op 'Nieuwe Pedal toevoegen' om de eerste toe te voegen.
+          pedal:
+            view_live_html: Deze pedal op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze pedal
+            delete: Deze pedal definitief verwijderen
+      pedals:
+        show:
+          other: Andere Pedals
+  activerecord:
+    attributes:
+      'refinery/pedals/pedal':
+        name: Name
+        riding_type: Riding Type
+        category: Category
+        weight: Weight
+        description: Description
+        pedal_image: Pedal Image

@@ -1,0 +1,32 @@
+fr:
+  refinery:
+    plugins:
+      pedals:
+        title: Pedals
+    pedals:
+      admin:
+        pedals:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Pedal
+            reorder: Réordonner les Pedals
+            reorder_done: Fin de réordonnancement des Pedals
+          records:
+            title: Pedals
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Pedal. Cliquer sur "Créer un(e) nouve(au/l/lle) Pedal" pour créer votre premi(er/ère) pedal.'
+          pedal:
+            view_live_html: Voir ce(t/tte) pedal <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) pedal
+            delete: Supprimer définitivement ce(t/tte) pedal
+      pedals:
+        show:
+          other: Autres Pedals
+  activerecord:
+    attributes:
+      'refinery/pedals/pedal':
+        name: Name
+        riding_type: Riding Type
+        category: Category
+        weight: Weight
+        description: Description
+        pedal_image: Pedal Image

@@ -1,0 +1,32 @@
+sk:
+  refinery:
+    plugins:
+      pedals:
+        title: Pedals
+    pedals:
+      admin:
+        pedals:
+          actions:
+            create_new: Pridať Pedal
+            reorder: Preusporiadať Pedals
+            reorder_done: Koniec radenia Pedals
+          records:
+            title: Pedals
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Pedals. Kliknite na "Pridať Pedal" pre pridanie prvého pedal.
+          pedal:
+            view_live_html: Zobraziť náhľad pedal<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť pedal
+            delete: Zmazať pedal
+      pedals:
+        show:
+          other: Daľšie Pedals
+  activerecord:
+    attributes:
+      'refinery/pedals/pedal':
+        name: Name
+        riding_type: Riding Type
+        category: Category
+        weight: Weight
+        description: Description
+        pedal_image: Pedal Image

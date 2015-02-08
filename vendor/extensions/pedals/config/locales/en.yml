@@ -1,0 +1,32 @@
+en:
+  refinery:
+    plugins:
+      pedals:
+        title: Pedals
+    pedals:
+      admin:
+        pedals:
+          actions:
+            create_new: Add New Pedal
+            reorder: Reorder Pedals
+            reorder_done: Done Reordering Pedals
+          records:
+            title: Pedals
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Pedals yet. Click "Add New Pedal" to add your first pedal.
+          pedal:
+            view_live_html: View this pedal live <br/><em>(opens in a new window)</em>
+            edit: Edit this pedal
+            delete: Remove this pedal forever
+      pedals:
+        show:
+          other: Other Pedals
+  activerecord:
+    attributes:
+      'refinery/pedals/pedal':
+        name: Name
+        riding_type: Riding Type
+        category: Category
+        weight: Weight
+        description: Description
+        pedal_image: Pedal Image

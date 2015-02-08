@@ -1,0 +1,33 @@
+es:
+  refinery:
+    plugins:
+      pedals:
+        title: Pedals
+#        article: masculino/femenino
+    pedals:
+      admin:
+        pedals:
+          actions:
+            create_new: Crear nuevo pedal
+            reorder: Reordenar pedals
+            reorder_done: Reordenación de pedals completada
+          records:
+            title: Pedals
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay pedals todavía. Pulsa en "Crear nuevo Pedal" para crear tu primer pedal.
+          pedal:
+            view_live_html: Ver este pedal como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este pedal
+            delete: Borrar este pedal para siempre
+      pedals:
+        show:
+          other: Otros pedals
+  activerecord:
+    attributes:
+      'refinery/pedals/pedal':
+        name: Name
+        riding_type: Riding Type
+        category: Category
+        weight: Weight
+        description: Description
+        pedal_image: Pedal Image

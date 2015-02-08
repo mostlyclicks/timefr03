@@ -1,0 +1,57 @@
+<% content_for :body_content_title do %>
+  <%= @pedal.name %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Name</h1>
+    <p>
+      <%=raw @pedal.name %>
+    </p>
+  </section>
+  <section>
+    <h1>Riding Type</h1>
+    <p>
+      <%=raw @pedal.riding_type %>
+    </p>
+  </section>
+  <section>
+    <h1>Category</h1>
+    <p>
+      <%=raw @pedal.category %>
+    </p>
+  </section>
+  <section>
+    <h1>Weight</h1>
+    <p>
+      <%=raw @pedal.weight %>
+    </p>
+  </section>
+  <section>
+    <h1>Description</h1>
+    <p>
+      <%=raw @pedal.description %>
+    </p>
+  </section>
+  <section>
+    <h1>Pedal Image</h1>
+    <p>
+      <%= image_fu @pedal.pedal_image, nil %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="pedals">
+      <% @pedals.each do |pedal| %>
+        <li>
+          <%= link_to pedal.name, refinery.pedals_pedal_path(pedal) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

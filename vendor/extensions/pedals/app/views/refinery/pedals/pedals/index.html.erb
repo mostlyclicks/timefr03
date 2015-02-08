@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="pedals">
+    <% @pedals.each do |pedal| %>
+      <li>
+        <%= link_to pedal.name, refinery.pedals_pedal_path(pedal) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>
