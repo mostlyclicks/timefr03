@@ -12,12 +12,14 @@
 
   <div class='field'>
     <%= f.label :riding_type -%>
-    <%= f.text_field :riding_type -%>
+    <% @riding_types = ['Road', 'MTB'] %>
+    <%= f.select(:riding_type, @riding_types.collect { |rt| [rt] }) -%>
   </div>
 
   <div class='field'>
     <%= f.label :category -%>
-    <%= f.text_field :category -%>
+    <% @ped_categories = ['Xpresso', 'RXS', 'ATAC XC', 'ATAC MX', 'ATAC DH'] %>
+    <%= f.select(:category, @ped_categories.collect { |pc| [pc] }) -%>
   </div>
 
   <div class='field'>
