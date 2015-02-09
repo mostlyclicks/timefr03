@@ -43,12 +43,12 @@ Refinery::Pedals::Engine.load_seed
 ]
 
 
-@pedals.each do |p|
-  Refinery::Pedals::Pedal.create(
-    name: p[:name],
-    riding_type: p[:riding_type],
-    category: p[:category],
-    weight: p[:weight],
-    description: p[:description]
-  )
-end
+# @pedals.each do |p|
+#   Refinery::Pedals::Pedal.create(
+#     name: p[:name],
+#     riding_type: p[:riding_type],
+#     category: p[:category],
+#     weight: p[:weight],
+#     description: p[:description]
+#   )
+# end

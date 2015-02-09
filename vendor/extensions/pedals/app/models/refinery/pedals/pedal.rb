@@ -2,6 +2,8 @@ module Refinery
   module Pedals
     class Pedal < Refinery::Core::BaseModel
       self.table_name = 'refinery_pedals'
+      extend FriendlyId
+      friendly_id :name, :use => [:slugged]
 
       attr_accessible :name, :riding_type, :category, :weight, :description, :pedal_image_id, :position
 
