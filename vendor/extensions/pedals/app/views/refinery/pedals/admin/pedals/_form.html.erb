@@ -18,7 +18,7 @@
 
   <div class='field'>
     <%= f.label :category -%>
-    <% @ped_categories = ['Xpresso', 'RXS', 'ATAC XC', 'ATAC MX', 'ATAC DH'] %>
+    <% @ped_categories = ['Xpresso', 'RXS', 'XC', 'MX', 'DH'] %>
     <%= f.select(:category, @ped_categories.collect { |pc| [pc] }) -%>
   </div>
 
