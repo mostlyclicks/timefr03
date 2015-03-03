@@ -1,0 +1,32 @@
+tr:
+  refinery:
+    plugins:
+      framesets:
+        title: Framesets
+    framesets:
+      admin:
+        framesets:
+          actions:
+            create_new: Yeni Ekle Frameset
+            reorder: Tekrar sirala Framesets
+            reorder_done: Tekrar siralama tamamlandiFramesets
+          records:
+            title: Framesets
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Framesets yok henuz.  Tikla "Yeni Ekle Frameset" eklemek senin ilk frameset.
+          frameset:
+            view_live_html: Bunu canlu frameset goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle frameset
+            delete: Bunu Sil frameset sonsuza dek
+      framesets:
+        show:
+          other: Diger Framesets
+  activerecord:
+    attributes:
+      'refinery/framesets/frameset':
+        name: Name
+        hero_image: Hero Image
+        hero_background_image: Hero Background Image
+        color: Color
+        weight: Weight
+        description: Description

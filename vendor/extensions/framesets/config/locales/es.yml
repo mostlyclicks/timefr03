@@ -1,0 +1,33 @@
+es:
+  refinery:
+    plugins:
+      framesets:
+        title: Framesets
+#        article: masculino/femenino
+    framesets:
+      admin:
+        framesets:
+          actions:
+            create_new: Crear nuevo frameset
+            reorder: Reordenar framesets
+            reorder_done: Reordenación de framesets completada
+          records:
+            title: Framesets
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay framesets todavía. Pulsa en "Crear nuevo Frameset" para crear tu primer frameset.
+          frameset:
+            view_live_html: Ver este frameset como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este frameset
+            delete: Borrar este frameset para siempre
+      framesets:
+        show:
+          other: Otros framesets
+  activerecord:
+    attributes:
+      'refinery/framesets/frameset':
+        name: Name
+        hero_image: Hero Image
+        hero_background_image: Hero Background Image
+        color: Color
+        weight: Weight
+        description: Description

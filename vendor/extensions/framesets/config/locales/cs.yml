@@ -1,0 +1,32 @@
+cs:
+  refinery:
+    plugins:
+      framesets:
+        title: Framesets
+    framesets:
+      admin:
+        framesets:
+          actions:
+            create_new: Přidat Frameset
+            reorder: Řadit Framesets
+            reorder_done: Konec řazení Framesets
+          records:
+            title: Framesets
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Framesets. Zvolte "Přidat Frameset" pro přidání prvního frameset.
+          frameset:
+            view_live_html: Zobrazit náhled frameset<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit frameset
+            delete: Smazat frameset
+      framesets:
+        show:
+          other: Další Framesets
+  activerecord:
+    attributes:
+      'refinery/framesets/frameset':
+        name: Name
+        hero_image: Hero Image
+        hero_background_image: Hero Background Image
+        color: Color
+        weight: Weight
+        description: Description

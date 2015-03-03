@@ -1,0 +1,32 @@
+fr:
+  refinery:
+    plugins:
+      framesets:
+        title: Framesets
+    framesets:
+      admin:
+        framesets:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Frameset
+            reorder: Réordonner les Framesets
+            reorder_done: Fin de réordonnancement des Framesets
+          records:
+            title: Framesets
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Frameset. Cliquer sur "Créer un(e) nouve(au/l/lle) Frameset" pour créer votre premi(er/ère) frameset.'
+          frameset:
+            view_live_html: Voir ce(t/tte) frameset <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) frameset
+            delete: Supprimer définitivement ce(t/tte) frameset
+      framesets:
+        show:
+          other: Autres Framesets
+  activerecord:
+    attributes:
+      'refinery/framesets/frameset':
+        name: Name
+        hero_image: Hero Image
+        hero_background_image: Hero Background Image
+        color: Color
+        weight: Weight
+        description: Description

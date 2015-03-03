@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Framesets::Admin::FramesetsController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.framesets_admin_framesets_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_framesets_admin_frameset_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Framesets::Admin::FramesetsController.sortable? && ::Refinery::Framesets::Frameset.many? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Framesets"),
+                 refinery.framesets_admin_framesets_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Framesets"),
+                 refinery.framesets_admin_framesets_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

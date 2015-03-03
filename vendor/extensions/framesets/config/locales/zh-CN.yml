@@ -1,0 +1,34 @@
+zh-CN:
+  refinery:
+    plugins:
+      framesets:
+        title: Framesets
+    framesets:
+      admin:
+        framesets:
+          actions:
+            create_new: 建立新的 Frameset
+            reorder: 对 Framesets 重新排序
+            reorder_done: 对 Framesets 的重新排序结束
+          records:
+            title: Framesets
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Framesets yet. Click "Add New Frameset" to add your first frameset.
+            no_items_yet: 目前没有 Framesets . 点击 "Add New Frameset" 创建一个frameset.
+          frameset:
+            view_live_html: 查看 frameset 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 frameset
+            delete: 永久删除 frameset
+      framesets:
+        show:
+          other: 其他 Framesets
+  activerecord:
+    attributes:
+      'refinery/framesets/frameset':
+        name: Name
+        hero_image: Hero Image
+        hero_background_image: Hero Background Image
+        color: Color
+        weight: Weight
+        description: Description

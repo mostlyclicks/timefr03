@@ -1,0 +1,32 @@
+nl:
+  refinery:
+    plugins:
+      framesets:
+        title: Framesets
+    framesets:
+      admin:
+        framesets:
+          actions:
+            create_new: Nieuwe Frameset toevoegen
+            reorder: De volgorde van de Framesets wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Frameset-volgorde
+          records:
+            title: Framesets
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Framesets. Druk op 'Nieuwe Frameset toevoegen' om de eerste toe te voegen.
+          frameset:
+            view_live_html: Deze frameset op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze frameset
+            delete: Deze frameset definitief verwijderen
+      framesets:
+        show:
+          other: Andere Framesets
+  activerecord:
+    attributes:
+      'refinery/framesets/frameset':
+        name: Name
+        hero_image: Hero Image
+        hero_background_image: Hero Background Image
+        color: Color
+        weight: Weight
+        description: Description

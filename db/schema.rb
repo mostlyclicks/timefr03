@@ -11,7 +11,32 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20150209040531) do
+ActiveRecord::Schema.define(:version => 20150302145255) do
+
+  create_table "refinery_frameset_translations", :force => true do |t|
+    t.integer  "refinery_frameset_id"
+    t.string   "locale",               :null => false
+    t.datetime "created_at",           :null => false
+    t.datetime "updated_at",           :null => false
+    t.string   "name"
+    t.string   "color"
+    t.text     "description"
+  end
+
+  add_index "refinery_frameset_translations", ["locale"], :name => "index_refinery_frameset_translations_on_locale"
+  add_index "refinery_frameset_translations", ["refinery_frameset_id"], :name => "index_refinery_frameset_translations_on_refinery_frameset_id"
+
+  create_table "refinery_framesets", :force => true do |t|
+    t.string   "name"
+    t.integer  "hero_image_id"
+    t.integer  "hero_background_image_id"
+    t.string   "color"
+    t.integer  "weight"
+    t.text     "description"
+    t.integer  "position"
+    t.datetime "created_at",               :null => false
+    t.datetime "updated_at",               :null => false
+  end
 
   create_table "refinery_images", :force => true do |t|
     t.string   "image_mime_type"

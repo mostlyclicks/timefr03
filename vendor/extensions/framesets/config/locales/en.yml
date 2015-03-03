@@ -1,0 +1,32 @@
+en:
+  refinery:
+    plugins:
+      framesets:
+        title: Framesets
+    framesets:
+      admin:
+        framesets:
+          actions:
+            create_new: Add New Frameset
+            reorder: Reorder Framesets
+            reorder_done: Done Reordering Framesets
+          records:
+            title: Framesets
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Framesets yet. Click "Add New Frameset" to add your first frameset.
+          frameset:
+            view_live_html: View this frameset live <br/><em>(opens in a new window)</em>
+            edit: Edit this frameset
+            delete: Remove this frameset forever
+      framesets:
+        show:
+          other: Other Framesets
+  activerecord:
+    attributes:
+      'refinery/framesets/frameset':
+        name: Name
+        hero_image: Hero Image
+        hero_background_image: Hero Background Image
+        color: Color
+        weight: Weight
+        description: Description

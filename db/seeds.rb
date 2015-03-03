@@ -52,3 +52,8 @@ Refinery::Pedals::Engine.load_seed
 #     description: p[:description]
 #   )
 # end
+# Added by Refinery CMS Framesets extension
+Refinery::Framesets::Engine.load_seed
+
+
+ 

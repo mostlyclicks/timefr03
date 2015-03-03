@@ -1,0 +1,32 @@
+nb:
+  refinery:
+    plugins:
+      framesets:
+        title: Framesets
+    framesets:
+      admin:
+        framesets:
+          actions:
+            create_new: Lag en ny Frameset
+            reorder: Endre rekkefølgen på Framesets
+            reorder_done: Ferdig å endre rekkefølgen Framesets
+          records:
+            title: Framesets
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Framesets enda. Klikk på "Lag en ny Frameset" for å legge til din første frameset.
+          frameset:
+            view_live_html: Vis hvordan denne frameset ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne frameset
+            delete: Fjern denne frameset permanent
+      framesets:
+        show:
+          other: Andre Framesets
+  activerecord:
+    attributes:
+      'refinery/framesets/frameset':
+        name: Name
+        hero_image: Hero Image
+        hero_background_image: Hero Background Image
+        color: Color
+        weight: Weight
+        description: Description

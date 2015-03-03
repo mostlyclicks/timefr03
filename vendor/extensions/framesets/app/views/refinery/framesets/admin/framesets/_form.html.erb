@@ -1,0 +1,60 @@
+<%= form_for [refinery, :framesets_admin, @frameset] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @frameset,
+              :include_object_name => true %>
+
+  <%= render '/refinery/admin/locale_picker',
+              :current_locale => Globalize.locale %>
+  <div class='field'>
+    <%= f.label :name -%>
+    <%= f.text_field :name, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :hero_image -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :hero_image_id,
+               :image => @frameset.hero_image,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :hero_background_image -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :hero_background_image_id,
+               :image => @frameset.hero_background_image,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :color -%>
+    <%= f.text_field :color -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :weight -%>
+    <%= f.number_field :weight -%>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:description],
+                :object => "framesets/frameset" -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.framesets.admin.framesets.frameset'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @frameset.name) -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>
